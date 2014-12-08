@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<style>
+#demo{
+	color:black;
+	background-color:white;
+	font-family:helvetica;
+	font-size:20px;
+}
+</style>
+
+<body>
+
+	<div>
+	<h1>My First Java Script</h1>
+		<p id="demo" onclick="changeColor()" src ="x">Javascript type/font element</p>
+		<img id="myImage" onclick="changeImage()" src="bulboff.png" width="100" height="180">
+		<p>click the light bulb to turn on/off the light.</p>
+			<script src="onoff.js"></script>
+	</div>
+
+	<div>
+		<p>please input a number between 1 and 10:</p>
+			<input id="numb" type="number">
+			<button type="button" onclick="myInput()">Submit</button>
+			
+		<p id="demo2"></p>
+
+		<h1>Console output</h1>
+			<p>Example of output from console.</p>
+
+			<script>
+ 				console.log(5 + 6);
+			</script>
+	</div>
+	
+	<div>
+		<p>Create a variable, assign a value to it, and display it:</p>
+			<div id="carId">
+				<p id="demo3"></p>
+				<p id="demo4"></p>
+					<script>
+						var carName = "Volvo";
+						document.getElementById("carId").innerHTML = carName;
+					</script>
+
+			</div>
+				<p>The 'typeof' operator returns type of variable</p>
+				<p id="demo5"></p>
+				<script>
+					document.getElementById("demo5").innerHTML =
+						typeof "John" + "<br>" +
+						typeof 2.24 + "<br>" +
+						typeof false + "<br>" +
+						typeof {name:'john', age:34};
+				</script>
+	</div>
+
+	<div>
+		<p id="demo11"></p>
+			<script src="bottles.js"></script>
+	</div>
+	
+	<div>
+		<p id="demo12"></p>
+		<script src="bottles.js"></script>
+	</div>
+
+</body>
+
+</html>
